@@ -8,16 +8,16 @@ export default function UserAuthProvider({ children }) {
 
   const login = () => {
     setIsLoggedIn(true);
-    setTheme("white"); // Light theme for logged-in state
+    setTheme("white");
   };
 
   const logout = () => {
     setIsLoggedIn(false);
-    setTheme("gray"); // Red theme when logged out
+    setTheme("gray");
   };
 
   useEffect(() => {
-    document.body.style.backgroundColor = theme; // Update the body background color dynamically
+    document.body.style.backgroundColor = theme;
   }, [theme]);
 
   return (
